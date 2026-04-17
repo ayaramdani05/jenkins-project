@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'maven:3.9.6-eclipse-temurin-21'
+            args '--network host'
+        }
+    }
     stages {
         stage('SonarQube Analysis') {
             steps {
