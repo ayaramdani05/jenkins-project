@@ -8,7 +8,7 @@ pipeline {
                         mvn clean verify sonar:sonar \
                           -Dsonar.projectKey=java-maven \
                           -Dsonar.projectName='java-maven' \
-                          -Dsonar.host.url=http://localhost:9000 \
+                          -Dsonar.host.url=http://172.18.0.1:9000 \
                           -Dsonar.token=\${SONAR_TOKEN}
                     """
                 }
