@@ -12,6 +12,7 @@ pipeline {
                     sh """
                         mvn clean verify sonar:sonar \
                           -Dmaven.repo.local=.m2/repository \
+                          -Dsonar.userHome=.sonar \
                           -Dsonar.projectKey=java-maven \
                           -Dsonar.projectName='java-maven' \
                           -Dsonar.host.url=http://172.18.0.1:9000 \
