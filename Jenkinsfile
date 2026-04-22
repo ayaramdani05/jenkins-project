@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3.9.6-eclipse-temurin-21'
-            args '--network host -v $HOME/.m2:/root/.m2'
+            args '--network host -v maven-repo:/root/.m2'
         }
     }
     stages {
