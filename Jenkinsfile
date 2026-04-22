@@ -15,7 +15,7 @@ pipeline {
                           -Dsonar.userHome=.sonar \
                           -Dsonar.projectKey=java-maven \
                           -Dsonar.projectName='java-maven' \
-                          -Dsonar.host.url=http://172.17.0.2:9000  \
+                          -Dsonar.host.url=http://172.21.0.4:9000 \
                           -Dsonar.token=\${SONAR_TOKEN}
                     """
                 }
